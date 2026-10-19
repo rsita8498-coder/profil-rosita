@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Rosita</title>
+
+    <style>
+        body {
+   	    font-family: Arial, sans-serif;
+ 	    background: linear-gradient(135deg, #ffd6e7, #d9eaff);
+	    text-align: center;
+ 	    padding: 40px 15px;
+	}
+
+	.bunga {
+ 	   margin-top: 20px;
+ 	   font-size: 30px;
+	   color: #ff69b4;
+ 	   animation: naikTurun 2s ease-in-out infinite;
+	}
+	@keyframes naikTurun {
+ 	   0%, 100% {
+	        transform: translateY(0);
+	    }
+	    50% {
+	        transform: translateY(-15px);
+	    }
+	}
+
+	.profil {
+ 	   background: white;
+ 	   max-width: 450px;
+   	   margin: auto;
+   	   padding: 30px;
+   	   border-radius: 20px;
+           box-shadow: 0 5px 20px #ddd;
+        }
+
+        h1 {
+            color: #e75480;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #e75480;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .tombol:hover {
+            background: #c93665;
+        }
+/* Tombol musik pink */
+.musik {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 350px;
+    background: linear-gradient(135deg, #ffe4f0, #e6f4ff);
+    border: 2px solid #ffb6d5;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #f3b6d0;
+    text-align: center;
+}
+
+.musik h3 {
+    color: #d63384;
+    font-size: 22px;
+}
+
+.musik audio {
+    width: 100%;
+    max-width: 300px;
+}
+/* Animasi bunga dan hati berjatuhan */
+.hiasan-jatuh {
+    position: fixed;
+    top: -40px;
+    z-index: 999;
+    pointer-events: none;
+    animation: jatuh 7s linear infinite;
+}
+
+@keyframes jatuh {
+    0% {
+        transform: translateY(-40px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+/* Tulisan sambutan */
+.sambutan {
+    color: #d63384;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    animation: muncul 2s ease-in-out infinite alternate;
+}
+
+.sambutan h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sambutan p {
+    font-size: 20px;
+    color: #8e44ad;
+}
+
+@keyframes muncul {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+    </style>
+</head>
+
+<body>
+<div class="sambutan">
+    <h2>🤍 Assalamu'alaikum 🤍</h2>
+    <p>Selamat Datang di Profil Saya 🌸💗</p>
+</div>
+    <div class="profil">
+        <h1>🌸 Profil Saya 🌸</h1>
+
+        <h2>Rosita</h2>
+<img src="rosita.jpeg" alt="Foto Rosita" width="200" style="border-radius: 20px; box-shadow: 0 4px 12px #d98ca8;">
+
+        <p>
+            Halo semuanya!<br>
+            Perkenalkan, nama saya Rosita.
+            Saya berasal dari Kembang Gading.
+            Saya adalah mahasiswa
+            Universitas Muhammadiyah Kotabumi.
+        </p>
+
+        <p>
+            <b>Asal daerah:</b> Kembang Gading<br>
+            <b>Kampus:</b> Universitas Muhammadiyah Kotabumi<br>
+            <b>Hobi:</b> Menonton drama
+        </p>
+
+        <a class="tombol"
+           href="https://wa.me/6289527133697"
+	   target =_blank">
+           Hubungi Saya via WhatsApp
+        </a>
+    </div>
+
+<div class="bunga">🌸 💗 🌸 💗 🌸</div>
+<div class="musik">
+    <h3>🎶 Musik untuk Kamu 💗</h3>
+    <audio controls loop>
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+</div>
+<div class="hiasan-jatuh" style="left: 10%; animation-delay: 0s;">🌸</div>
+<div class="hiasan-jatuh" style="left: 30%; animation-delay: 2s;">💗</div>
+<div class="hiasan-jatuh" style="left: 50%; animation-delay: 4s;">🌷</div>
+<div class="hiasan-jatuh" style="left: 70%; animation-delay: 1s;">💕</div>
+<div class="hiasan-jatuh" style="left: 90%; animation-delay: 3s;">🌸</div>
+</body>
+</html>
